@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{% block title %}{% endblock title %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    {% block extra-header %}{% endblock extra-header %}
+  </head>
+
+  <nav class="navbar navbar-inverse">
+
+  <body class="{% block body-class %}template-normal{% endblock body-class %}">
+    {% block wrapper %}
+    {% block header-wrapper %}
+
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">African Precision Medicine Portal</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Home<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/how_to_use/">How To Use</a></li>
+            <li><a href="/how_to_cite/">How To Cite</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Database</a></li>
+        <li><a href="#">Additional Resources</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    {% endblock header-wrapper %}
+    {% block content-wrapper %}
+
+    <div class="container">
+		{% block submenu %}
+		{% endblock submenu %}
+	</div>
+    
+    <div class="{% block content-container-class %}container{% endblock content-container-class %}">
+        {% block content-message %}
+        {% if messages %}
+            {% for message in messages %}
+            <div class="alert alert-{{ message.tags }}">
+                <a class="close" data-dismiss="alert">×</a>
+                {{ message }}
+            </div>
+            {% endfor %}
+        {% endif %}
+        {% endblock content-message %}
+        {% block breadcrumb %}{% endblock breadcrumb %}
+        {% block content-block %}
+        <div class="block">
+            <div class="block_head">
+                <h1>{% block content-title %}{% endblock content-title %}</h1>
+            </div> 
+            <div class="block_content">
+                {% block content %}{% endblock content %}
+            </div>
+        </div>
+        {% endblock content-block %}
+        {% block extra-block %}{% endblock extra-block %}
+    </div> <!-- /container -->
+
+    {% block extra-content-block %}{% endblock extra-content-block %}
+    {% endblock content-wrapper %}
+    {% block footer-wrapper %}
+    <footer class="footer">
+        <div class="container">{% block footer %}{% endblock footer %}</div>
+    </footer>
+    {% endblock footer-wrapper %}
+    {% endblock wrapper %}
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+     
+  </body>
+</html>

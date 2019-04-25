@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% load staticfiles %}
+
+{% block head_title %} {{ block.super }}  {% endblock %}
+
+{% block content %}
+
+<div class="jumbotron">
+<h1 class="text-center">Precision Medicine Portal</h1>
+<p>The genomic profile of African individuals and individuals of
+    recent African descends house a huge amount of diversity. Genomic diversity
+    is associated with susceptibility and predisposition to various communicable and
+    non-communicable diseases in the African continent. Similarly, the genomic diversity
+    has also been associated to various therapies deployed for various diseases</p>
+</div>
+
+<div class="center-block" align="center">
+	<a href="http://www.nih.gov/">
+		<img src="{% static "home.png" %}" alt="Logo" width="220">
+	</a>
+</div>
+
+{% endblock content %}
