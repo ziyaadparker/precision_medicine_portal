@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block head_title %} {{ block.super }}  {% endblock %}
+
+{% block content %}
+<!doctype>
+<html>
+<head>
+<style>
+ table
+{
+    border-collapse: collapse; 
+}
+td
+{
+    border: 1px solid black;
+}
+    </style>
+</head>
+<body>
+<h1 class="text-center">Tools and Pipelines</h1>
+<table align=center cellspacing=10 >
+<tr>
+<td>Name</td>
+<td>Resource Type</td>
+<td>Description</td>
+<td>Link</td>
+</tr>
+<tr>
+<td>SCAN</td>
+<td>Data Analysis Tool</td>
+<td>SNP annotation, GWAS analysis tool</td>
+<td><a href=http://www.scandb.org/>http://www.scandb.org/ </a></td>
+</tr>
+
+<tr>
+<td>Pharmacogenomic Software Tools</td>
+<td>Data Analysis Tool</td>
+<td>Various tools for pharmacogenomics data analysis.</td>
+<td><a href=https://omictools.com/pharmacogenetics-category >https://omictools.com/pharmacogenetics-category </a></td>
+</tr>
+
+<tr>
+<td>PharmCAT</td>
+<td>Data Analysis Tool</td>
+<td>Pharmacogenomics Clinical Annotation Tool</td>
+<td><a href=https://www.pharmgkb.org/page/pharmcat >https://www.pharmgkb.org/page/pharmcat </a></td>
+</tr>
+</table>
+</body>
+</html>
+
+{% endblock content %}

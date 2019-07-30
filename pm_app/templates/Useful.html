@@ -1,0 +1,148 @@
+{% extends 'base.html' %}
+
+{% block head_title %} {{ block.super }}  {% endblock %}
+
+{% block content %}
+
+<!doctype>
+<html>
+<head>
+<style>
+ table
+{
+    border-collapse: collapse; 
+}
+td
+{
+    border: 1px solid black;
+}
+    </style>
+</head>
+<body>
+<h1> Useful Links </h1>
+<table align=center cellspacing=10 >
+<tr>
+<td>Database categories</td>
+<td>Database</td>
+<td cellsapcing=10>Link to Website</td>
+</tr>
+<tr>
+<td rowspan=2>ALL</td>
+<td>PharmGKB</td>
+<td><a href=https://www.pharmgkb.org/>https://www.pharmgkb.org/
+</a></td>
+</tr>
+<tr>
+<td>KEGG</td>
+<td><a href=https://www.genome.jp/kegg/>https://www.genome.jp/kegg/</a></td>
+</tr>
+<tr>
+<td rowspan=5>Variant</td>
+<td>ClinVar</td>
+<td><a href=https://www.ncbi.nlm.nih.gov/clinvar/>https://www.ncbi.nlm.nih.gov/clinvar/</a></td>
+</tr>
+<tr>
+<td>dbSNP</td>
+<td><a href=https://www.ncbi.nlm.nih.gov/snp>https://www.ncbi.nlm.nih.gov/snp</a></td>
+</tr>
+<tr>
+<td>VEP</td>
+<td><a href=https://www.ensembl.org/info/docs/tools/vep/index.html>https://www.ensembl.org/info/docs/tools/vep/index.html</a></td>
+</tr>
+<tr>
+<td>PhamVar</td>
+<td><a href=https://www.pharmvar.org/>https://www.pharmvar.org/</a></td>
+</tr>
+<tr>
+<td>GWAS Catalog</td>
+<td><a href=https://www.ebi.ac.uk/gwas/home>https://www.ebi.ac.uk/gwas/home</a></td>
+</tr>
+
+<tr>
+<td rowspan=7>Gene</td>
+<td>OMIM</td>
+<td><a href=https://www.omim.org/>https://www.omim.org/</a></td>
+</tr>
+<tr>
+<td>UCSC</td>
+<td><a href=https://genome.ucsc.edu/>https://genome.ucsc.edu/</a></td>
+</tr>
+<tr>
+<td>Uniprot</td>
+<td><a href=https://www.uniprot.org/>https://www.uniprot.org/</a></td>
+</tr>
+<tr>
+<td>GO</td>
+<td></td>
+</tr>
+<tr>
+<td>Gene Card</td>
+<td></td>
+</tr>
+<tr>
+<td>Ensembl</td>
+<td></td>
+</tr>
+<tr>
+<td>NCBI Gene</td>
+<td></td>
+</tr>
+<tr>
+<td rowspan=6>Disease</td>
+<td>BioMart (Ensemble)</td>
+<td><a href=https://www.ensembl.org/biomart/martview/ee5b8c1f66f8f26b9c8d60cc0c2ecabf>https://www.ensembl.org/biomart/martview/ee5b8c1f66f8f26b9c8d60cc0c2ecabf</a></td>
+</tr>
+<tr>
+<td>ClinGen</td>
+<td><a href=https://www.clinicalgenome.org/>https://www.clinicalgenome.org/</a></td>
+</tr>
+<tr>
+<td>Monarch Initiative</td>
+<td><a href=https://monarchinitiative.org/>https://monarchinitiative.org/</a></td>
+</tr>
+<tr>
+<td>MyVariantInfo</td>
+<td><a href=http://myvariant.info/>http://myvariant.info/</a></td>
+</tr>
+<tr>
+<td>MESH</td>
+<td></td>
+</tr>
+<tr>
+<td>ICD11</td>
+<td></td>
+</tr>
+
+<tr>
+<td rowspan=6>Drug</td>
+<td>Gnomad</td>
+<td><a href=https://gnomad.broadinstitute.org/>https://gnomad.broadinstitute.org/</a></td>
+</tr>
+
+<tr>
+<td>CPIC</td>
+<td><a href=https://cpicpgx.org/>https://cpicpgx.org/</a></td>
+</tr>
+
+<tr>
+<td>EVA (Now Elixer)</td>
+<td><a href=https://www.ebi.ac.uk/eva/>https://www.ebi.ac.uk/eva/</a></td>
+</tr>
+<tr>
+<td>PubChem</td>
+<td></td>
+</tr>
+<tr>
+<td>Drug Bank</td>
+<td></td>
+</tr>
+<tr>
+<td>FDA Drug Label</td>
+<td></td>
+</tr>
+</table>
+
+</body>
+</html>
+
+{% endblock content %}

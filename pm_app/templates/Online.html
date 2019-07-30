@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+
+{% block head_title %} {{ block.super }}  {% endblock %}
+
+{% block content %}
+<!doctype>
+<html>
+<head>
+<style>
+ table
+{
+    border-collapse: collapse; 
+}
+td
+{
+    border: 1px solid black;
+}
+    </style>
+</head>
+<body>
+<h1 class="text-center">Online Courses</h1>
+<table align=center cellspacing=10 >
+<tr>
+<td>Name</td>
+<td>Resource Type</td>
+<td>Description</td>
+<td>Link</td>
+</tr>
+<tr>
+<td>Genomics & Precision Medicine - Coursera</td>
+<td>Online Course</td>
+<td><p>Course aims to provide participants with some baseline knowledge of genomics, an overview of the clinical applications of genomic medicine, the skills to evaluate the clinical validity and utility of new tests, and an appreciation of the associated ethical and social issues inherent in this field.</p></td>
+<td><a href=https://www.coursera.org/learn/genomic-precision-medicine>https://www.coursera.org/learn/genomic-precision-medicine</a></td>
+</tr>
+<tr>
+<td>Case Studies in Personalized Medicine</td>
+<td>Online Course</td>
+<td><p>This course will present short primers in genetics and mechanisms underlying variability in drug responses. A series of case studies will be used to illustrate principles of how genetics are being brought to bear on refining diagnoses and on personalizing treatment in rare and common diseases.</p></td>
+<td><a href=https://www.coursera.org/learn/personalizedmed>https://www.coursera.org/learn/personalizedmed </a></td>
+</tr>
+
+<tr>
+<td>Data Science in Stratified Healthcare and Precision Medicine</td>
+<td>Online Course</td>
+<td><p>In this course, you will learn about some of the different types of data and computational methods involved in stratified healthcare and precision medicine.  You will have a hands-on experience of working with such data.  And you will learn from leaders in the field about successful case studies.</p></td>
+<td><a href=https://www.coursera.org/learn/datascimed>https://www.coursera.org/learn/datascimed</a></td>
+</tr>
+
+<tr>
+<td>Using Personalized Medicine and Pharmacogenetics</td>
+<td>Online Course</td>
+<td><p>On this course you will explore their potential, taking a close look at the human genome, genome and exome sequencing, pharmacogenetics tests, a review of current best evidence and the use of personalized medicine in cancer therapy.</p></td>
+<td><a href=https://www.futurelearn.com/courses/personalized-medicine>https://www.futurelearn.com/courses/personalized-medicine</a></td>
+</tr>
+
+<tr>
+<td>Pharmacogenomics Course</td>
+<td>Online Course</td>
+<td><p>A Training Program in Pharmacogenomics for both the practicing professional and for pharmacy students. This 16-hour RxGenomix self-paced course was designed to help working pharmacists learn about the science of pharmacogenomics and how it may be applied in their clinical practice.<p></td>
+<td><a href=http://www.rxgenomix.com/courses/pharma>http://www.rxgenomix.com/courses/pharma</a></td>
+</tr>
+</table>
+</body>
+</html>
+
+
+
+{% endblock content %}
