@@ -1,8 +1,8 @@
-# How to run locally
+* create virtual environment
+* `virtualenv -p python3 env_p`
+* `activate the new virtual environment (source env_pm/bin/activate)`
 
-- virtualenv -p python3 env_pm
-- activate the new environment (source env_pm/bin/activate)
-- clone from Github
-- python manage.py makemigrations pm_app
-- python manage.py migrate
-- python manage.py runserver
+* clone from Github
+* `python manage.py makemigrations pm_app`
+* `python manage.py migrate`
+* `python manage.py runserver`
