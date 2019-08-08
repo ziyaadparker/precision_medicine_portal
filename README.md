@@ -1,3 +1,6 @@
+## How to run:
+Python 3 must be installed. 
+
 * create virtual environment
 * `virtualenv -p python3 env_p`
 * `activate the new virtual environment (source env_pm/bin/activate)`
